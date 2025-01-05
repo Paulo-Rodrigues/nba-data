@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  nba-data:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./db:/db
+      - ./notebooks:/nba-data/notebooks
+    ports:
+      - "5000:5000"
+      - "8888:8888"
