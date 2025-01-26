@@ -4,3 +4,6 @@ numpy
 matplotlib
 pandas
 seaborn
+sqlalchemy
+ipython-sql
+prettytable
